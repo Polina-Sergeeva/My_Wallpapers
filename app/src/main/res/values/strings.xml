@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Wallpapers</string>
+    <string name="the_application_requires_network_access">The application requires network access</string>
+    <string name="setWallpaper">Установить как обои</string>
+</resources>

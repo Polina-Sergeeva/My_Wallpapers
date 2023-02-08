@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/style_background"
+    android:foregroundTint="#FF0000"
+    android:foregroundTintMode="add">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/prevImg"
+        android:layout_width="180dp"
+        android:layout_height="255dp"
+        android:layout_margin="5dp"
+        android:foregroundTintMode="multiply"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:elevation="5dp"
+        android:visibility="visible"
+        android:indeterminateTint="@color/startColor"
+        app:layout_constraintBottom_toBottomOf="@+id/prevImg"
+        app:layout_constraintEnd_toEndOf="@+id/prevImg"
+        app:layout_constraintStart_toStartOf="@+id/prevImg"
+        app:layout_constraintTop_toTopOf="@+id/prevImg" />
+
+    <TextView
+        android:id="@+id/downloadtv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_margin="8dp"
+        android:text="TextView"
+        android:textColor="#EEFF02"
+        app:layout_constraintBottom_toBottomOf="@+id/prevImg"
+        app:layout_constraintEnd_toEndOf="@+id/prevImg"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="@+id/prevImg"
+        app:layout_constraintTop_toTopOf="@+id/prevImg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="8dp"
+        android:foregroundTint="#ECFD00"
+        app:layout_constraintBottom_toBottomOf="@+id/downloadtv"
+        app:layout_constraintEnd_toStartOf="@+id/downloadtv"
+        app:layout_constraintStart_toStartOf="@+id/prevImg"
+        app:layout_constraintTop_toTopOf="@+id/downloadtv"
+        app:srcCompat="@android:drawable/stat_sys_download" />
+
+    <TextView
+        android:id="@+id/viewstv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_margin="8dp"
+        android:text="6474"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/prevImg"
+        app:layout_constraintEnd_toEndOf="@+id/prevImg" />
+
+    <ImageView
+        android:id="@+id/viewsimg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:foregroundTint="#FF0000"
+        android:foregroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@+id/viewstv"
+        app:layout_constraintEnd_toStartOf="@+id/viewstv"
+        app:layout_constraintTop_toTopOf="@+id/viewstv"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
